@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptraps Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div id="services">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of construction materials to meet all your building needs.</p>
+    </div>
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+254112549445">+254112549445</a></p>
+        <p>Email: <a href="mailto:okemwabrian135@gmail.com">okemwabrian135@gmail.com</a></p>
+    </div>
+    <div id="about">
+        <h2>About Adaptraps Company</h2>
+        <p>Adaptraps Company is committed to providing high-quality construction materials. Our experienced team ensures that all our products meet the highest standards of quality and durability.</p>
+    </div>
+    <div class="shop">
+        <h2>Shop Construction Materials</h2>
+        <div class="product">
+            <img src="cement bag.jpg" alt="Cement">
+            <p>Cement - ksh 810 per bag</p>
+            <input type="number" id="cement-quantity" placeholder="Quantity">
+            <button onclick="addToCart('cement', 810)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="bricks.jpg" alt="Bricks">
+            <p>Bricks - ksh50 each</p>
+            <input type="number" id="bricks-quantity" placeholder="Quantity">
+            <button onclick="addToCart('bricks', 50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="d10 steel.jpg" alt="D10 steel">
+            <p>D10 steel - ksh200 per kg</p>
+            <input type="number" id="steel-quantity" placeholder="Quantity">
+            <button onclick="addToCart('steel', 200)">Add to Cart</button>
+
+        </div>
+        <div class="product">
+            <img src="wheelbarrow.jpg" alt="wheelbarrow">
+            <p>wheelbarrow - ksh1150 each</p>
+            <input type="number" id="wheelbarrow-quantity" placeholder="Quantity">
+            <button onclick="addToCart('wheelbarrow', 1150)">Add to Cart</button>
+        </div>
+
+        <!-- Add more products as needed -->
+    </div>
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ksh<span id="total-price">0.00</span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
